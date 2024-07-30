@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  app:
+    image: phelo/design_patterns_image
+    container_name: design_patterns
+    restart: always
+    volumes:
+      - .:/usr/src/myapp
+    entrypoint: ["/bin/sleep", "Infinity"]
